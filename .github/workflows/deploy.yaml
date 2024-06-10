@@ -23,7 +23,7 @@ jobs:
         run: GO111MODULE=on go run .ci/prebuild/gofmt_check.go
       -
         name: Binary release
-        uses: goreleaser/goreleaser-action@v2
+        uses: goreleaser/goreleaser-action@v6
         with:
           version: latest
           args: release --rm-dist
